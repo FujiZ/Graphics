@@ -12,3 +12,7 @@ void Primitive::display() {
 void Primitive::setCurrentPrimitive(Primitive *p_primitive) {
     __cur=p_primitive;
 }
+
+void Primitive::rotate() {
+    __cur->_rotate();
+}

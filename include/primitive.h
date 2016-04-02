@@ -11,9 +11,11 @@ class Primitive{
 public:
     static void setCurrentPrimitive(Primitive* p_primitive);
     static void display();
+    static void rotate();
 
 protected:
     virtual void _display()=0;
+    virtual void _rotate()=0;
 
 private:
     static Primitive *__cur;

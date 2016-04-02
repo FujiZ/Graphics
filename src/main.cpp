@@ -13,14 +13,15 @@ void init() {
 
 int main(int argc,char** argv) {
     glutInit(&argc,argv);
-    glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+    glutInitDisplayMode(GLUT_RGB|GLUT_DOUBLE);
     glutInitWindowPosition(100,100);
-    glutInitWindowSize(400,400);
+    glutInitWindowSize(600,600);
     glutCreateWindow("Star");
     init();
-    Star star(0.75);
+    Star star(0.5);
     star.setCurrentPrimitive(&star);
     glutDisplayFunc(star.display);
+    //glutIdleFunc(star.rotate);
     glutMainLoop();
     return 0;
 }

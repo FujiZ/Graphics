@@ -16,13 +16,16 @@ public:
 
 protected:
     void _display() override;
+    void _rotate() override;
 
 private:
-    void _drawLine();
-    void _drawPoint();
-    void _drawPolygon();
+    void __drawLine();
+    void __drawPoint();
+    void __drawPolygon();
 
-    double __radius;
+    double __radius;    //半径
+    double __spin=0;    //旋转角度
+    int __centerVertex=0;  //旋转中心
     std::vector<Vertex> __outVertex;
     std::vector<Vertex> __inVertex;
 };

@@ -20,14 +20,19 @@ Star::Star(double radius):__radius(radius){
 
 void Star::_display() {
     glClear(GL_COLOR_BUFFER_BIT);
-    //glRotated(9,0,0,1); //对坐标进行旋转
-    _drawPolygon();
-    _drawLine();
-    _drawPoint();
-    glFlush();
+    glPushMatrix();
+    //坐标平移
+    glTranslated(__outVertex[0].x,__outVertex[0].y,0);
+    glRotated(__spin,0,0,1);    //旋转
+    glTranslated(-__outVertex[0].x,-__outVertex[0].y,0);
+    __drawPolygon();
+    __drawLine();
+    __drawPoint();
+    glPopMatrix();
+    glutSwapBuffers();
 }
 
-void Star::_drawPolygon() {
+void Star::__drawPolygon() {
     //填充颜色
     glColor3d(1.0,1.0,0.0); //黄色
     glBegin(GL_POLYGON);
@@ -36,7 +41,7 @@ void Star::_drawPolygon() {
     glEnd();
 }
 
-void Star::_drawPoint() {
+void Star::__drawPoint() {
     glPointSize(8);
     glColor3d(0.0,0.0,0.0); //黑色
     //生成点
@@ -46,18 +51,22 @@ void Star::_drawPoint() {
     glEnd();
 }
 
-void Star::_drawLine() {
+void Star::__drawLine() {
     glLineWidth(2); //设置线宽
     glColor3d(0.0,0.0,0.0); //黑色
     //生成轮廓
     glBegin(GL_LINES);
-
     int size=(int)__outVertex.size();
     for(int i=0;i<size;++i){
         glVertex2d(__outVertex[i].x,__outVertex[i].y);
         int j=(i+2)%size;
         glVertex2d(__outVertex[j].x,__outVertex[j].y);
     }
-
     glEnd();
+}
+
+void Star::_rotate() {
+    __spin+=2;
+    if(__spin>360) __spin-=360;
+    glutPostRedisplay();
 }
