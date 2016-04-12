@@ -25,7 +25,7 @@ private:
 
     double __radius;    //半径
     double __spin=0;    //旋转角度
-    int __centerVertex=0;  //旋转中心
+    int __rotateCenter=0;  //旋转中心
     std::vector<Vertex> __outVertex;
     std::vector<Vertex> __inVertex;
 };

@@ -22,9 +22,9 @@ void Star::_display() {
     glClear(GL_COLOR_BUFFER_BIT);
     glPushMatrix();
     //坐标平移
-    glTranslated(__outVertex[0].x,__outVertex[0].y,0);
+    glTranslated(__outVertex[__rotateCenter].x,__outVertex[__rotateCenter].y,0);
     glRotated(__spin,0,0,1);    //旋转
-    glTranslated(-__outVertex[0].x,-__outVertex[0].y,0);
+    glTranslated(-__outVertex[__rotateCenter].x,-__outVertex[__rotateCenter].y,0);
     __drawPolygon();
     __drawLine();
     __drawPoint();
