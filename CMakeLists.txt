@@ -10,7 +10,8 @@ INCLUDE_DIRECTORIES(include)
 AUX_SOURCE_DIRECTORY(src DIR_SRCS)
 
 add_executable(star ${DIR_SRCS} test/main_star.cpp)
+add_executable(qube ${DIR_SRCS} test/main_qube.cpp)
 
 add_executable(hello test/hello.cpp)
 add_executable(double test/double.cpp)
-add_executable(qube test/qube.cpp)
+#add_executable(qube test/qube.cpp)

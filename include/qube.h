@@ -19,7 +19,9 @@ protected:
     void _rotate() override;
 
 private:
-    void __drawSurface(std::vector<Vertex> surface, unsigned char color);
+    void __drawSurface(std::vector<Vertex>& surface, unsigned int color);
+    double __radius;
+    double __spin=0;
     std::vector<std::vector<Vertex>> __surfaceVec;
 
 };

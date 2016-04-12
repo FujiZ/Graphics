@@ -36,7 +36,7 @@ void Star::__drawPolygon() {
     //填充颜色
     glColor3d(1.0,1.0,0.0); //黄色
     glBegin(GL_POLYGON);
-    for(Vertex &vertex:__inVertex)
+    for(auto& vertex:__inVertex)
         glVertex2d(vertex.x,vertex.y);
     glEnd();
 }
@@ -46,7 +46,7 @@ void Star::__drawPoint() {
     glColor3d(0.0,0.0,0.0); //黑色
     //生成点
     glBegin(GL_POINTS);
-    for(Vertex &vertex:__outVertex)
+    for(auto& vertex:__outVertex)
         glVertex2d(vertex.x,vertex.y);
     glEnd();
 }

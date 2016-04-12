@@ -5,7 +5,7 @@
 #include "qube.h"
 
 
-Qube::Qube(double radius) {
+Qube::Qube(double radius):__radius(radius) {
     double len=radius/sqrt(3);
     //生成8个顶点
     Vertex points[]={
@@ -21,10 +21,11 @@ Qube::Qube(double radius) {
     };
     //生成6个面的坐标vector,点以逆时针方式分布
     __surfaceVec.resize(6);
-    //bottom(0,1,2,3)
-    for(int i=0;i<=3;++i){
-        __surfaceVec[0].push_back(points[i]);
-    }
+    //bottom(1,0,3,2)
+    __surfaceVec[0].push_back(points[1]);
+    __surfaceVec[0].push_back(points[0]);
+    __surfaceVec[0].push_back(points[3]);
+    __surfaceVec[0].push_back(points[2]);
     //top(4,5,6,7)
     for(int i=4;i<=7;++i){
         __surfaceVec[1].push_back(points[i]);
@@ -54,6 +55,32 @@ Qube::Qube(double radius) {
 
 void Qube::_display() {
     glClear(GL_COLOR_BUFFER_BIT);
-
+    glLoadIdentity();
+    double eyePos=__radius/sqrt(3);
+    gluLookAt(eyePos,eyePos,eyePos,0,0,0,-1,1,-1);
+    glPushMatrix();
+    glRotated(__spin,0,1,0);
+    unsigned int color=1;
+    for(auto& surface:__surfaceVec)
+        __drawSurface(surface,color++);
+    glPopMatrix();
     glutSwapBuffers();
+}
+
+void Qube::__drawSurface(std::vector<Vertex> &surface, unsigned int color) {
+    //set color
+    double colorR=(color&4)?1:0;
+    double colorG=(color&2)?1:0;
+    double colorB=(color&1)?1:0;
+    glColor3d(colorR,colorG,colorB);
+    glBegin(GL_POLYGON);
+    for(auto& vertex:surface)
+        glVertex3d(vertex.x,vertex.y,vertex.z);
+    glEnd();
+}
+
+void Qube::_rotate() {
+    __spin+=2;
+    if(__spin>360) __spin-=360;
+    glutPostRedisplay();
 }
