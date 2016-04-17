@@ -8,7 +8,11 @@
 void init() {
     glClearColor(1,1,1,0);
     glShadeModel(GL_FLAT);
-    glPolygonMode(GL_BACK,GL_POINT);
+    //glPolygonMode(GL_FRONT,GL_FILL);
+    //glPolygonMode(GL_BACK,GL_POINT);
+    //去除back面的多边形
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
 }
 
 int main(int argc,char** argv) {

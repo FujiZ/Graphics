@@ -3,13 +3,16 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/qube.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/primitive.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/star.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/primitive.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/teapot.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/hello.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/light.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/main_teapot.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/main_qube.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/double.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test/main_star.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/hello.cpp" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
