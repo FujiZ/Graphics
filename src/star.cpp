@@ -5,21 +5,22 @@
 #include "star.h"
 
 
-Star::Star(double radius):__radius(radius){
-    double aa=cos(54.0/360.0*2*M_PI);
-    double bb=aa*tan(36.0/360.0*2*M_PI);
-    double cc=sin(54.0/360.0*2*M_PI)-bb;
+Star::Star(double radius):Primitive("Star"),__radius(radius){
+    double aa=std::cos(54.0/360.0*2*M_PI);
+    double bb=aa*std::tan(36.0/360.0*2*M_PI);
+    double cc=std::sin(54.0/360.0*2*M_PI)-bb;
 
     int rotate=18;  //代表旋转的角度
     for(int i=rotate;i<360+rotate;i+=72){
-        __outVertex.emplace_back(__radius*cos(i/360.0*2.0*M_PI),__radius*sin(i/360.0*2.0*M_PI),0);
-        __inVertex.emplace_back(cc*__radius*cos((i+36)/360.0*2.0*M_PI),cc*__radius*sin((i+36)/360.0*2.0*M_PI),0);
+        __outVertex.emplace_back(__radius*std::cos(i/360.0*2.0*M_PI),__radius*std::sin(i/360.0*2.0*M_PI),0);
+        __inVertex.emplace_back(cc*__radius*std::cos((i+36)/360.0*2.0*M_PI),cc*__radius*std::sin((i+36)/360.0*2.0*M_PI),0);
     }
 
 }
 
 void Star::_display() {
     glClear(GL_COLOR_BUFFER_BIT);
+    glLoadIdentity();
     glPushMatrix();
     //坐标平移
     glTranslated(__outVertex[__rotateCenter].x,__outVertex[__rotateCenter].y,0);
@@ -65,8 +66,15 @@ void Star::__drawLine() {
     glEnd();
 }
 
-void Star::_rotate() {
+void Star::_idle() {
     __spin+=2;
     if(__spin>360) __spin-=360;
     glutPostRedisplay();
+}
+
+void Star::_init() {
+    glClearColor(1,1,1,0);
+    glShadeModel(GL_FLAT);
+    glEnable(GL_POINT_SMOOTH);
+    glEnable(GL_LINE_SMOOTH);
 }

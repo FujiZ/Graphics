@@ -7,7 +7,6 @@
 
 #include "global.h"
 #include <cmath>
-#include <vector>
 #include "primitive.h"
 
 class Qube:public Primitive{
@@ -15,8 +14,10 @@ public:
     Qube(double radius);
 
 protected:
+    void _init() override;
     void _display() override;
-    void _rotate() override;
+    void _idle() override;
+    //void _destruct() override;
 
 private:
     void __drawSurface(std::vector<Vertex>& surface, unsigned int color);

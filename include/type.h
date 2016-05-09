@@ -5,7 +5,7 @@
 #ifndef GRAPHICS_TYPE_H
 #define GRAPHICS_TYPE_H
 
-struct Vertex{
+class Vertex{
 public:
     Vertex(double px, double py, double pz):x(px),y(py),z(pz){}
     double x;

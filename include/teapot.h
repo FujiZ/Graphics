@@ -14,8 +14,10 @@ public:
     Teapot(double size);
 
 protected:
+    void _init() override;
     void _display() override;
-    void _rotate() override;
+    void _idle() override;
+    void _destruct() override;
 
 private:
     double __size;

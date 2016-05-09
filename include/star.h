@@ -7,7 +7,6 @@
 
 #include "global.h"
 #include <cmath>
-#include <vector>
 #include "primitive.h"
 
 class Star:public Primitive{
@@ -15,8 +14,10 @@ public:
     Star(double radius);
 
 protected:
+    void _init() override;
     void _display() override;
-    void _rotate() override;
+    void _idle() override;
+    //void _destruct() override;
 
 private:
     void __drawLine();

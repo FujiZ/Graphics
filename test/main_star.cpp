@@ -21,7 +21,7 @@ int main(int argc,char** argv) {
     Star star(0.5);
     star.setCurrentPrimitive(&star);
     glutDisplayFunc(star.display);
-    glutIdleFunc(star.rotate);
+    glutIdleFunc(star.idle);
     glutMainLoop();
     return 0;
 }

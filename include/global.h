@@ -6,6 +6,8 @@
 #define GRAPHICS_GLOBAL_H
 
 #include <GL/glut.h>
+#include <vector>
+#include <memory>
 #include "type.h"
 
 #endif //GRAPHICS_GLOBAL_H

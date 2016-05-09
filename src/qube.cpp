@@ -5,8 +5,8 @@
 #include "qube.h"
 
 
-Qube::Qube(double radius):__radius(radius) {
-    double len=radius/sqrt(3);
+Qube::Qube(double radius):Primitive("Qube"),__radius(radius) {
+    double len=radius/std::sqrt(3);
     //生成8个顶点
     Vertex points[]={
             Vertex(len,-len,len),
@@ -56,7 +56,7 @@ Qube::Qube(double radius):__radius(radius) {
 void Qube::_display() {
     glClear(GL_COLOR_BUFFER_BIT);
     glLoadIdentity();
-    double eyePos=__radius/sqrt(3);
+    double eyePos=__radius/std::sqrt(3);
     gluLookAt(eyePos,eyePos,eyePos,0,0,0,-1,1,-1);
     glPushMatrix();
     glRotated(__spin,0,1,0);
@@ -79,8 +79,16 @@ void Qube::__drawSurface(std::vector<Vertex> &surface, unsigned int color) {
     glEnd();
 }
 
-void Qube::_rotate() {
+void Qube::_idle() {
     __spin+=2;
     if(__spin>360) __spin-=360;
     glutPostRedisplay();
+}
+
+void Qube::_init() {
+    glClearColor(1,1,1,0);
+    glShadeModel(GL_SMOOTH);
+    //去除back面的多边形
+    glEnable(GL_CULL_FACE);
+    glCullFace(GL_BACK);
 }
