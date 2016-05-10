@@ -17,7 +17,8 @@ protected:
     void _init() override;
     void _display() override;
     void _idle() override;
-    //void _destruct() override;
+    void _reshape(int w,int h) override;
+    void _destruct() override;
 
 private:
     void __drawSurface(std::vector<Vertex>& surface, unsigned int color);

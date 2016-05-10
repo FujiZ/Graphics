@@ -12,11 +12,11 @@ int main(int argc,char** argv) {
     std::shared_ptr<Primitive> primitive=std::make_shared<Star>(0.5);
     Primitive::addPrimitive(primitive);
     auto star=primitive;
-    primitive=std::make_shared<Qube>(0.5);
+    primitive=std::make_shared<Qube>(0.3);
     Primitive::addPrimitive(primitive);
     primitive=std::make_shared<Teapot>(0.5);
     Primitive::addPrimitive(primitive);
-    Primitive::__setMenu();
+    Primitive::initMenu();
     Primitive::switchPrimitive(star);
     glutMainLoop();
     return 0;

@@ -54,16 +54,17 @@ Qube::Qube(double radius):Primitive("Qube"),__radius(radius) {
 }
 
 void Qube::_display() {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    double eyePos=__radius/std::sqrt(3);
+    //double eyePos=__radius/std::sqrt(3);
+    double eyePos=1;
     gluLookAt(eyePos,eyePos,eyePos,0,0,0,-1,1,-1);
-    glPushMatrix();
+    //gluLookAt(1,1,1,0,0,0,-1,1,-1);
     glRotated(__spin,0,1,0);
     unsigned int color=1;
     for(auto& surface:__surfaceVec)
         __drawSurface(surface,color++);
-    glPopMatrix();
     glutSwapBuffers();
 }
 
@@ -91,4 +92,20 @@ void Qube::_init() {
     //去除back面的多边形
     glEnable(GL_CULL_FACE);
     glCullFace(GL_BACK);
+    _reshape(window_width,window_height);
+}
+
+void Qube::_reshape(int w, int h) {
+    Primitive::_reshape(w,h);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(45,(double)w/h,__radius/std::sqrt(3),2);
+    glMatrixMode(GL_MODELVIEW);
+}
+
+void Qube::_destruct() {
+    glDisable(GL_CULL_FACE);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glMatrixMode(GL_MODELVIEW);
 }

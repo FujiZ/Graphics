@@ -18,7 +18,7 @@ int main(int argc,char** argv) {
     std::shared_ptr<Primitive> qube=std::make_shared<Qube>(0.5);
     Primitive::addPrimitive(qube);
     qube->switchPrimitive(qube);
-    Primitive::__setMenu();
+    Primitive::initMenu();
     glutMainLoop();
     return 0;
 }

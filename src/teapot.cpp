@@ -9,12 +9,12 @@ Teapot::Teapot(double size):Primitive("Teapot"),__size(size) { }
 
 void Teapot::_display() {
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    glPushMatrix();
     glRotated(__spin,0,1,0);
     glutSolidTeapot(__size);
-    glPopMatrix();
     glutSwapBuffers();
+    glLoadIdentity();
 }
 
 void Teapot::_idle() {
@@ -31,10 +31,13 @@ void Teapot::_init() {
     GLfloat white_light[]={1,1,1,1};
     GLfloat red_light[]={1,0,0,1};
     GLfloat lmodel_ambient[]={0.1,0.1,0.1,1.0};
+
     glClearColor(0,0,0,0);
     glShadeModel(GL_SMOOTH);
     glMaterialfv(GL_FRONT,GL_SPECULAR,mat_specular);
     glMaterialfv(GL_FRONT,GL_SHININESS,mat_shininess);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
     //light0
     glLightfv(GL_LIGHT0,GL_POSITION,light_position0);
     glLightfv(GL_LIGHT0,GL_DIFFUSE,white_light);
@@ -43,6 +46,7 @@ void Teapot::_init() {
     glLightfv(GL_LIGHT1,GL_POSITION,light_position1);
     glLightfv(GL_LIGHT1,GL_DIFFUSE,red_light);
     glLightfv(GL_LIGHT1,GL_SPECULAR,red_light);
+
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT,lmodel_ambient);
 
     glEnable(GL_LIGHTING);

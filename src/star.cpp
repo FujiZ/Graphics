@@ -19,9 +19,9 @@ Star::Star(double radius):Primitive("Star"),__radius(radius){
 }
 
 void Star::_display() {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    glPushMatrix();
     //坐标平移
     glTranslated(__outVertex[__rotateCenter].x,__outVertex[__rotateCenter].y,0);
     glRotated(__spin,0,0,1);    //旋转
@@ -29,8 +29,8 @@ void Star::_display() {
     __drawPolygon();
     __drawLine();
     __drawPoint();
-    glPopMatrix();
     glutSwapBuffers();
+    glLoadIdentity();
 }
 
 void Star::__drawPolygon() {
@@ -77,4 +77,9 @@ void Star::_init() {
     glShadeModel(GL_FLAT);
     glEnable(GL_POINT_SMOOTH);
     glEnable(GL_LINE_SMOOTH);
+}
+
+void Star::_destruct() {
+    glDisable(GL_POINT_SMOOTH);
+    glDisable(GL_LINE_SMOOTH);
 }

@@ -15,14 +15,19 @@ public:
     static void init(int argc,char** argv);
     static void display();
     static void idle();
-    static void __setMenu();
+    static void reshape(int w,int h);
+    static void initMenu();
     const char* name();
 
 protected:
     virtual void _init()=0;
     virtual void _display()=0;
     virtual void _idle();
+    virtual void _reshape(int w,int h);
     virtual void _destruct();
+
+    static int window_width;
+    static int window_height;
 
 private:
     static void __processMenuEvents(int option);

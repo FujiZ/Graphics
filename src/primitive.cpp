@@ -5,6 +5,8 @@
 
 std::shared_ptr<Primitive> Primitive::__curPrimitive = nullptr;
 std::vector<std::shared_ptr<Primitive>> Primitive::__primitives;
+int Primitive::window_width=0;
+int Primitive::window_height=0;
 
 Primitive::Primitive(char const* name):NAME(name) { }
 
@@ -14,6 +16,10 @@ void Primitive::display() {
 
 void Primitive::idle() {
     __curPrimitive->_idle();
+}
+
+void Primitive::reshape(int w, int h) {
+    __curPrimitive->_reshape(w,h);
 }
 
 void Primitive::switchPrimitive(std::shared_ptr<Primitive> newPrimitive) {
@@ -32,7 +38,7 @@ const char* Primitive::name() {
     return NAME;
 }
 
-void Primitive::__setMenu() {
+void Primitive::initMenu() {
     glutCreateMenu(__processMenuEvents);
     for(unsigned int i=0;i<__primitives.size();++i){
         //给菜单增加条目
@@ -50,9 +56,11 @@ void Primitive::init(int argc,char** argv) {
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_RGB|GLUT_DOUBLE|GLUT_DEPTH);
     glutInitWindowPosition(100,100);
-    glutInitWindowSize(600,600);
+    window_width=window_height=600;
+    glutInitWindowSize(window_width,window_height);
     glutCreateWindow("Graphics");
     glutDisplayFunc(display);
+    glutReshapeFunc(reshape);
     glutMouseFunc(__processMouseEvents);
     glutIdleFunc(NULL);
 }
@@ -72,10 +80,15 @@ void Primitive::__processMouseEvents(int button, int state, int x, int y) {
     }
 }
 
-void Primitive::_idle() {
+void Primitive::_idle() { }
 
-}
+void Primitive::_destruct() { }
 
-void Primitive::_destruct() {
-
+void Primitive::_reshape(int w,int h) {
+    window_height=w;
+    window_width=h;
+    glViewport(0,0,w,h);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glMatrixMode(GL_MODELVIEW);
 }
