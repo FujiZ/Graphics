@@ -60,7 +60,6 @@ void Qube::_display() {
     //double eyePos=__radius/std::sqrt(3);
     double eyePos=1;
     gluLookAt(eyePos,eyePos,eyePos,0,0,0,-1,1,-1);
-    //gluLookAt(1,1,1,0,0,0,-1,1,-1);
     glRotated(__spin,0,1,0);
     unsigned int color=1;
     for(auto& surface:__surfaceVec)

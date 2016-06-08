@@ -58,6 +58,7 @@ void Primitive::init(int argc,char** argv) {
     glutInitWindowPosition(100,100);
     window_width=window_height=600;
     glutInitWindowSize(window_width,window_height);
+    glViewport(0,0,window_width,window_height);
     glutCreateWindow("Graphics");
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);

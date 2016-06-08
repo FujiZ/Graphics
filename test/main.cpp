@@ -6,6 +6,7 @@
 #include "star.h"
 #include "qube.h"
 #include "teapot.h"
+#include "texture.h"
 
 int main(int argc,char** argv) {
     Primitive::init(argc,argv);
@@ -15,6 +16,8 @@ int main(int argc,char** argv) {
     primitive=std::make_shared<Qube>(0.3);
     Primitive::addPrimitive(primitive);
     primitive=std::make_shared<Teapot>(0.5);
+    Primitive::addPrimitive(primitive);
+    primitive=std::make_shared<Texture>();
     Primitive::addPrimitive(primitive);
     Primitive::initMenu();
     Primitive::switchPrimitive(star);

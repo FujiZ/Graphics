@@ -8,6 +8,7 @@
 #include "global.h"
 
 class Primitive{
+
 public:
     Primitive(const char* name);
     static void addPrimitive(std::shared_ptr<Primitive> newPrimitive);
