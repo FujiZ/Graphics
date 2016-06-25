@@ -24,19 +24,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25e7de93-38a8-4906-b779-cb9388c744d8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/texture.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/texture.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/checker.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/main_textrue.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Graphics.iml" afterPath="$PROJECT_DIR$/.idea/Graphics.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/primitive.h" afterPath="$PROJECT_DIR$/include/primitive.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/type.h" afterPath="$PROJECT_DIR$/include/type.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/primitive.cpp" afterPath="$PROJECT_DIR$/src/primitive.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/qube.cpp" afterPath="$PROJECT_DIR$/src/qube.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/main.cpp" afterPath="$PROJECT_DIR$/test/main.cpp" />
     </list>
     <ignored path="Graphics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,36 +53,15 @@
           <file leaf-file-name="texture.cpp" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/texture.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1404">
-                  <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                <state relative-caret-position="71">
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#2#0" expanded="false" />
-                    <element signature="e#60#166#0" expanded="false" />
                     <element signature="e#168#462#0" expanded="false" />
                     <element signature="e#464#933#0" expanded="false" />
+                    <element signature="e#1853#2513#0" expanded="false" />
+                    <element signature="e#2515#3172#0" expanded="false" />
                     <element signature="e#3174#3539#0" expanded="false" />
                     <element signature="e#3541#5041#0" expanded="false" />
-                    <element signature="e#5043#5197#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="primitive.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/primitive.cpp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1176">
-                  <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#2#0" expanded="false" />
-                    <element signature="e#309#370#0" expanded="false" />
-                    <element signature="e#372#427#0" expanded="false" />
-                    <element signature="e#429#505#0" expanded="false" />
-                    <element signature="e#507#730#0" expanded="false" />
-                    <element signature="e#732#847#0" expanded="false" />
-                    <element signature="e#849#899#0" expanded="false" />
-                    <element signature="e#901#1162#0" expanded="false" />
-                    <element signature="e#1724#2103#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -100,8 +70,8 @@
           <file leaf-file-name="qube.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/qube.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="127">
-                  <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+                <state relative-caret-position="2640">
+                  <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#2#0" expanded="false" />
                     <element signature="e#58#1578#0" expanded="false" />
@@ -113,8 +83,8 @@
           <file leaf-file-name="star.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/star.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="943">
-                  <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+                <state relative-caret-position="648">
+                  <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
                   <folding />
                 </state>
               </provider>
@@ -123,22 +93,21 @@
           <file leaf-file-name="teapot.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/teapot.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-65">
-                  <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+                <state relative-caret-position="600">
+                  <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#2#0" expanded="false" />
-                    <element signature="e#366#462#0" expanded="false" />
                     <element signature="e#464#1477#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/main.cpp">
+          <file leaf-file-name="main_textrue.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/main_textrue.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+                <state relative-caret-position="360">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -151,26 +120,35 @@
           <file leaf-file-name="texture.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/texture.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3912">
-                  <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
+                <state relative-caret-position="0">
+                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#2#0" expanded="false" />
-                    <element signature="e#60#166#0" expanded="false" />
                     <element signature="e#168#462#0" expanded="false" />
                     <element signature="e#464#933#0" expanded="false" />
+                    <element signature="e#1853#2513#0" expanded="false" />
+                    <element signature="e#2515#3172#0" expanded="false" />
                     <element signature="e#3174#3539#0" expanded="false" />
                     <element signature="e#3541#5041#0" expanded="false" />
-                    <element signature="e#5043#5197#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="texture.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="texture.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/include/texture.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-36">
-                  <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+                <state relative-caret-position="720">
+                  <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/main.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="192">
+                  <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -210,14 +188,14 @@
         <option value="$PROJECT_DIR$/src/star.cpp" />
         <option value="$PROJECT_DIR$/include/primitive.h" />
         <option value="$PROJECT_DIR$/test/checker.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test/main_textrue.cpp" />
-        <option value="$PROJECT_DIR$/src/qube.cpp" />
         <option value="$PROJECT_DIR$/include/type.h" />
-        <option value="$PROJECT_DIR$/include/texture.h" />
         <option value="$PROJECT_DIR$/test/main.cpp" />
         <option value="$PROJECT_DIR$/src/primitive.cpp" />
+        <option value="$PROJECT_DIR$/include/texture.h" />
         <option value="$PROJECT_DIR$/src/texture.cpp" />
+        <option value="$PROJECT_DIR$/src/qube.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -258,38 +236,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphics" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphics" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphics" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -569,7 +516,7 @@
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23048523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17563291" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3340564" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -630,7 +577,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -865,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/qube.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -890,9 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding>
-            <element signature="e#205#561#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -907,25 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#91#110#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main_textrue.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/texture.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,11 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#109#288#1" expanded="false" />
-            <element signature="e#199#244#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,15 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="1343" column="59" selection-start-line="1343" selection-start-column="59" selection-end-line="1343" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,14 +865,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/texture.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main_textrue.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/qube.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        <state relative-caret-position="2640">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
             <element signature="e#58#1578#0" expanded="false" />
@@ -978,28 +897,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/star.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+        <state relative-caret-position="648">
+          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teapot.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        <state relative-caret-position="600">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#366#462#0" expanded="false" />
             <element signature="e#464#1477#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/texture.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#168#462#0" expanded="false" />
+            <element signature="e#464#933#0" expanded="false" />
+            <element signature="e#1853#2513#0" expanded="false" />
+            <element signature="e#2515#3172#0" expanded="false" />
+            <element signature="e#3174#3539#0" expanded="false" />
+            <element signature="e#3541#5041#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/primitive.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
             <element signature="e#309#370#0" expanded="false" />
@@ -1014,19 +955,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/texture.cpp">
+    <entry file="file://$PROJECT_DIR$/test/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1404">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#60#166#0" expanded="false" />
-            <element signature="e#168#462#0" expanded="false" />
-            <element signature="e#464#933#0" expanded="false" />
-            <element signature="e#3174#3539#0" expanded="false" />
-            <element signature="e#3541#5041#0" expanded="false" />
-            <element signature="e#5043#5197#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

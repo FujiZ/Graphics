@@ -55,6 +55,9 @@ Qube::Qube(double radius):Primitive("Qube"),__radius(radius) {
 
 void Qube::_display() {
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(45,(double)window_width/window_height,__radius/std::sqrt(3),2);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     //double eyePos=__radius/std::sqrt(3);
